@@ -1,0 +1,2 @@
+Scarewear: pop-up that tells u the system is unsafe.
+Rootkit: modify the system to generate a backdoor.
