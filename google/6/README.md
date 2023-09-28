@@ -197,5 +197,3 @@ More verbous: ```Login Event [2022/11/16 05:45:15.892673] auth_performer.cc:470 
             <Data Name='NewProcessId'>0x1404</Data>
         </EventData>
         ```
-*   CSV
-*   CEF
