@@ -197,3 +197,39 @@ More verbous: ```Login Event [2022/11/16 05:45:15.892673] auth_performer.cc:470 
             <Data Name='NewProcessId'>0x1404</Data>
         </EventData>
         ```
+
+## IDS
+
+**Host based intrusiond detection systems(HIDS)** monitors the activity of the host where is installed.
+**Network based intrusion detection system(NIDS)** collect and monitors network traffic and network data. Is installed on devices located at specific parts of the netwrork that you want to monitor.
+
+# Signature based analysis
+is a detection method that is used to find events of interest. A signature is a pattern that is associated with malicious activity, can cointain a sequence of bincary numbers, bytes or even specific data like IP addresses.
+*   Low rate of false positive
+*   Signatures can be evaded like making slight modification to the malware to altern his signature
+*   Signatures requires updates: relies on a databse of signatures to detect threats
+*   Inability to detect unknown threats
+
+# Anomaly based analysis
+identify abnormal behavior, there are two phases: the training phase(a baseline of normal or expected behavior must be established) and the detection phase(the current system activity is compared against this baseline). Baseline are developed by collecting data that corresponds to normal system behavior. Activity that happens outside of the baseline gets logged and an alert is generated.
+*   Ability to detect new and evolving threats
+*   High rate of false positive
+*   Pre-existing compromise: the existence of an attacker furing the training phase will include malicious beheavior in the baseline
+
+## Suricata
+
+*   EVE JSON: extensible event format javascritp object notation
+*   FAST LOG: record minimal alert information including basic IP address and port details about the network traffic
+Suricata creates two types of log data:
+*   Alert logs: cotain information that's relevant to security investigations, output of signatures which have triggered an alert.
+*   Network telemetry logs: contain information about network traffic flows, network telemetry is not always security relevant, it's simply recording wht's happening on a network such as connection being made to a specific port.
+
+# Alert
+The alert keyword instructs to alert on selected network traffic. The IDS will inspect the traffic packets and send out an alert in case it matches.
+Note that the drop action also generates an alert, but it drops the traffic. A drop action only occurs when Suricata runs in IPS mode.
+The pass action allows the traffic to pass through the network interface. The pass rule can be used to override other rules. An exception to a drop rule can be made with a pass rule.
+The reject action does not allow the traffic to pass. Instead, a TCP reset packet will be sent, and Suricata will drop the matching packet. A TCP reset packet tells computers to stop sending messages to each other.
+
+## SIEM tools
+
+Is possible to manually upload data or use software to help collect data for log ingestion. Manually uoloading data is inefficient so is possible to use log forwarding programs. These automatically collect and send log data.
