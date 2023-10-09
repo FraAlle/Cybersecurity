@@ -17,3 +17,11 @@ Seeking emails using notation
 `with open ("text.txt","r") as file: ` with handle errors and once finished with the file, it automatically close the file.
 *   `.read()` convert files into strings
 *   if u want to append strings to a text u must use the `a` in the open option and than for write into a file, u just need to use `.write(string)`.
+
+# Split
+
+converts a string into a list based on a specified character that's passed into `.split()`.
+
+# Join
+
+convert a list into a string
