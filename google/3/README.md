@@ -91,7 +91,7 @@ Is a network security device that monitors traffic to and from your network.
 There is the option of using an cloud firewall by utilizing FaaS(firewall as a service).
 
 Al the firewlls we have discussed can be either stateful or stateless.
-*   Statefull firewall: analyzes network traffic for characteristics and behavior that appera suspicious and stops them from entering the network. This only acts according to preconfigures rules set by the firewall administrator.
+*   Statefull firewall: analyzes network traffic for characteristics and behavior that appers suspicious and stops them from entering the network. This only acts according to preconfigures rules set by the firewall administrator.
 *   Stateless firewall: operates based on predefined rules and does not keep track of information from data packets. This doesn't store analyzed information neither discover suspicious trends like the stateful firewall does.
 
 The next gen firewall, the NGFW, provides even more security than a statefull firewall, not only provide stateful inspection of incoming and outgoing traffic, but it also performs more in-depht security functions like deep packet inspection and intrusion protection.
