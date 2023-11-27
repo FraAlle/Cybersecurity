@@ -10,7 +10,7 @@ An example is the Pass-The-Hash attack: an attacker capture an hash password and
 ## Cyber kill chain
 
 This framework define the steps to make use for hackers.
-1. Reconnaissance: is discovering and collecting info on the victim, utilizing OSINT(Open-Source Intelligence-> free services where you can found info about one person) too. Email harvesting is the process to obtain emails from public, paid or free services and can be used for an phishing attack. Some site to gather info are: [theHarvester](https://github.com/laramies/theHarvester) / [Hunter.io](Hunter.io) / [OSINT](https://osintframework.com/)
+1. Reconnaissance: is discovering and collecting info on the victim, utilizing OSINT(Open-Source Intelligence-> free services where you can found info about one person) too. Email harvesting is the process to obtain emails from public, paid or free services and can be used for an phishing attack. Some site to gather info are: [theHarvester](https://github.com/laramies/theHarvester) / [Hunter.io](https://Hunter.io) / [OSINT](https://osintframework.com/)
 2. Weaponization
 3. Delivery
 4. Exploitation
