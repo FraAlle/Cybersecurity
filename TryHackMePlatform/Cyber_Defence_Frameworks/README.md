@@ -80,3 +80,30 @@ The attacker try to gain additional access and privileges to systems and data to
 16. Exfiltration: steal data which can be packaged using encryption measures and compression to avoid any detection
 17. Impact: if the adversary seek to compromise the integritu and availability of the data assets they would manilulate, interrupt or destroy assets.
 18. Objectives: here the attacker can reach his goals.
+
+## Diamond model
+It helps identihy the elements of an intrusion.
+Is composed by four features:
+*   adversary: is the person behind the cyberattack. 
+    *   Operator: is the hacker or person conducting the intrusion activity
+    *   Customer: is the entity that stands to benefit from the intrusion, is may be the same person who stands behind the operator.
+*   infrasstructure: is the physical or logical interconnections that the hacker uses to deliver a capability or maintain control of capabilities.
+    *   Type 1: is the infrastructure controlled or owned by the hacker
+    *   Type 2: is the infrastructure controlled by an intermediary. This has the job to obfuscating the source and attribution of the activity.
+    *   Providers: are organizations that provide services considered critical for the adversary avaiability of Type 1 and Type 2.
+*   capability: are the skill, tools and techniques used by the hacker
+    *   Capacity: is all of the vulnerabilities and exposures that the individual capability can use
+    *   Arsenal: is a set of capabilities that belong to an adversary.
+*   victim: is the target of the adversary. 
+    *   Personae: are the people and organizations being targeted and whose assets are being attacked and exploited.
+    *   Assets: include the set of systems, networks, email, host, IP, addresses, social network accounts etc.
+And two more:
+*   social-political: describe the needs and intent of the adversary. P.E. financial gain, gaining acceptance, hacktivism or espionage.
+*   technology: highlits the relationship between capability and infrastructure. They togheter describes how the hacker operates and communicates.
+Plus we can add 6 more meta-feture, those are not required but can add valuable information about the diamond model:
+*   Timestamp: it can include when the event is started and ended.
+*   Phase: are the phases of an intrusion, attack or breach. An example is the Cyber Kill Chain.
+*   Result: the results and post-conditions of an hacker's operation can be really valuable. It is crucial to capture them. They can be related to the CIA triad.
+*   Direction: help describe host-based and network based events and represents the attack.
+*   Methodology: allow an analyst to describe the general classification of intrusion(phishing DDoS, breach, port scan, etc)
+*   Resources: every intrusion event needs one or more external resources to be satisfied to succeed.
