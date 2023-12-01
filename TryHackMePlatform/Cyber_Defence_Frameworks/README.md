@@ -107,3 +107,11 @@ Plus we can add 6 more meta-feture, those are not required but can add valuable 
 *   Direction: help describe host-based and network based events and represents the attack.
 *   Methodology: allow an analyst to describe the general classification of intrusion(phishing DDoS, breach, port scan, etc)
 *   Resources: every intrusion event needs one or more external resources to be satisfied to succeed.
+
+## MITRE
+APT(Advanced Persistence Threat), can be considered a team or coutry that engages a long-term attacks against organizations or countris.
+TTP(Tactics, Techniques and Procedures):
+*   Tactic: is the hacker goal
+*   Technique: is the method to achieve that goal
+*   Procedure: is how those techniques are executed 
+CAR(Cyber Analytics Repository) is a knowledfe base of analytics developed by MITRE.
