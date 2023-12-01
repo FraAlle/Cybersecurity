@@ -1,0 +1,1 @@
+Sysmon is a tool to monitor log events on Windows. Is similar to Windows Event Logs with further detail and granular control.
