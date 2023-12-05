@@ -115,3 +115,8 @@ TTP(Tactics, Techniques and Procedures):
 *   Technique: is the method to achieve that goal
 *   Procedure: is how those techniques are executed 
 CAR(Cyber Analytics Repository) is a knowledfe base of analytics developed by MITRE.
+# MITRE ENGAGE
+Is a framework for planning adversary engagement operations that empowers you to engage your adversaries and achieve your goals.
+*   Cyber Denial: prevent the adversary's ability to conduct thei operations.
+*   Cyber Deception: we intentionally plan artifacts to mislead the adversary.
+MITRE formed an organization named CTID(Center of Threat-Informed Defense). This organization consists of various companies and vendors from around the globe.
