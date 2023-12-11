@@ -120,3 +120,20 @@ Is a framework for planning adversary engagement operations that empowers you to
 *   Cyber Denial: prevent the adversary's ability to conduct thei operations.
 *   Cyber Deception: we intentionally plan artifacts to mislead the adversary.
 MITRE formed an organization named CTID(Center of Threat-Informed Defense). This organization consists of various companies and vendors from around the globe.
+
+## CTI(Cyber Threat Intelligence)
+Evidence-based knowledge about adversaries, including their indicators, tactics, motivations and actionable advice against them.
+In this environmente some common words change their meaning:
+1. Data: IP addresses, URLs and hashes
+2. Information: combination of multiple data points that answer questions sucha as "How much employees accessed a website within the mouth?"
+3. Intelligence: the correlation of data and information to extract patterns of actions based on contextual analysis
+Classification:
+*   Strategic intel: intel that looks on organization's threat landscape and maps out the risk areas based on trends, patterns and emerging
+*   Technical intel: evidence and artefacts of attack used by an adversary, incident response teeam use this intel to create a baseline attack surface to analyse and develop defence mechanisms
+*   Tactical intel: take TTPs
+*   Operational intel: looks for specific motives and intent to perform an attack
+
+The CTI ligecycle:
+*   Direction: every threat intel program need an objective and a goal, we can follow these parameters:
+    *   information assets and business processes that require defending
+    *   potential impact to be experienced on losing the assets or through process interruptions
