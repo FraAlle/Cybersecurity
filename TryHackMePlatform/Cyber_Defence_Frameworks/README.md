@@ -137,3 +137,17 @@ The CTI ligecycle:
 *   Direction: every threat intel program need an objective and a goal, we can follow these parameters:
     *   information assets and business processes that require defending
     *   potential impact to be experienced on losing the assets or through process interruptions
+*   Collection: once objectives have been defined, security analysts will gather the required data to address them. Analyst will do this by using commercial, private and open.source resources available.
+*   Processing: raw logs, vulnerability information, malware and network traffic usually come in different formats and can be disconnected when used to investigate an incident.
+*   Analysis: once the information gathering  is complete they must derive insights
+    *   investigating a potential threat
+    *   defending an action plan to avert an attacck and defend the infrastructure
+    *   increase defense security controls or justifying investment for additional resources
+*   Dissemination: differents stakeholders will consume the intelligence in varying languages and formats
+*   Feedback: analysts rely on the response provided by stakeholders to improve the threat intelligence process and implementation of security controls
+
+TAXII(The Trusted Automated eXchange of Indicator Information) defines protocols for securely exchanging threat intel to have near real-time detection, prevention and mitigation of threats. It supports 2 models:
+*   Collection: threath intel is collected and hosted by a producer upon request by users using a request-response model
+*   Channel: threath intel is pushed to users from a central server through a publish-subscribe model
+
+STIX(Structured Threat Information Expression) is a language developed for the "specification, capture, characterisation and communication of standardised cyber threat information".
