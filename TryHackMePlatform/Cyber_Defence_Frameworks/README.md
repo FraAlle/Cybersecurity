@@ -151,3 +151,13 @@ TAXII(The Trusted Automated eXchange of Indicator Information) defines protocols
 *   Channel: threath intel is pushed to users from a central server through a publish-subscribe model
 
 STIX(Structured Threat Information Expression) is a language developed for the "specification, capture, characterisation and communication of standardised cyber threat information".
+
+# Threat intelligence tools
+
+*   Strategic intel: high level intel that looks into the organisation's threat landscape and maps out the risk areas based on trend, patterns and emerging threats that may impact business decision
+*   Tecnical intel: looks for evidance used by an adversary, this can be used by response teams to create a baseline attack surface to analyse and develop defence mechanisms
+*   Tactical intel: TTPs, this can improve security controls and address vulnerabilities through real-time investigations
+*   Operational intel: looks for adversary's specific motives and intent to perform an attack, this can be used to understand the critical assets available in the organisation
+
+[urlscan.io](https://www.urlscan.io)
+[abuse.ch](https://www.abuse.ch) identify and tack malware and botnets through several operational platforms
