@@ -152,7 +152,7 @@ TAXII(The Trusted Automated eXchange of Indicator Information) defines protocols
 
 STIX(Structured Threat Information Expression) is a language developed for the "specification, capture, characterisation and communication of standardised cyber threat information".
 
-# Threat intelligence tools
+## Threat intelligence tools
 
 *   Strategic intel: high level intel that looks into the organisation's threat landscape and maps out the risk areas based on trend, patterns and emerging threats that may impact business decision
 *   Tecnical intel: looks for evidance used by an adversary, this can be used by response teams to create a baseline attack surface to analyse and develop defence mechanisms
@@ -162,3 +162,28 @@ STIX(Structured Threat Information Expression) is a language developed for the "
 [urlscan.io](https://www.urlscan.io)
 [abuse.ch](https://www.abuse.ch) identify and tack malware and botnets through several operational platforms
 [phishing tool](https://www.phishtool.com)
+
+## YARA
+
+Yara is based on rules, and to utilize it we need a rule and the name file/the path.
+[Yara guide complete](https://yara.readthedocs.io/en/stable/writingrules.html)
+Check for file which contains "Hello world!" wrote in those ways
+"""
+rule helloworld_checker{
+	strings:
+		$hello_world = "Hello World!"
+		$hello_world_lowercase = "hello world"
+		$hello_world_uppercase = "HELLO WORLD"
+
+	condition:
+		any of them
+}
+"""
+
+# Cuckoo sandbox
+
+Is an automated malware analysis environment, this allow to generate Yara rules based upon the behaviours discovered from Cuckoo.
+
+# Pythonn PE(a file formato for executables DLLs, FONS)
+
+Allows to create rules with Yara from the various sections and elements of the Windows Portable Executable(PE) structure.
