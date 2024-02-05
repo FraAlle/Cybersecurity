@@ -179,6 +179,10 @@ rule helloworld_checker{
 		any of them
 }
 """
+[Usefull links for yara 1](https://www.bsk-consulting.de/2015/02/16/write-simple-sound-yara-rules/)
+[Usefull links for yara 2](https://www.bsk-consulting.de/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/)
+[Usefull links for yara 3](https://www.bsk-consulting.de/2016/04/15/how-to-write-simple-but-sound-yara-rules-part-3/)
+
 
 # Cuckoo sandbox
 
@@ -187,3 +191,29 @@ Is an automated malware analysis environment, this allow to generate Yara rules 
 # Pythonn PE(a file formato for executables DLLs, FONS)
 
 Allows to create rules with Yara from the various sections and elements of the Windows Portable Executable(PE) structure.
+
+[GITHUB yara resources](https://github.com/InQuest/awesome-yara)
+
+# LOKI
+Is a free Indicator of Compromise(IoC)
+[Full github readme page of LOKI](https://github.com/Neo23x0/Loki/blob/master/README.md)
+
+We can use Loki to scan on the endpoint.
+
+
+# THOR
+Is a multi-platform IOC and YARA scanner. It limit the use of the CPU.
+[THOR download](https://www.nextron-systems.com/thor-lite/)
+
+# FENRIR
+Fenrir is a bash script, it runs on every system.
+[GITHUB](https://github.com/Neo23x0/Fenrir)
+
+# yarGen
+Is a generator for YARA rules.
+Exist and analyzer to yara rules. [yarAnalizer](https://github.com/Neo23x0/yarAnalyzer/)
+Once we created a rule we must move it to the directory where all yara rules are and than we can try again the scan.
+
+# Valhalla
+Is an online Yara feed.
+[Valhalla](https://valhalla.nextron-systems.com/)
