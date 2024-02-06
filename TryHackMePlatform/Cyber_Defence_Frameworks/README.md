@@ -217,3 +217,43 @@ Once we created a rule we must move it to the directory where all yara rules are
 # Valhalla
 Is an online Yara feed.
 [Valhalla](https://valhalla.nextron-systems.com/)
+
+
+## OpenCTI
+
+Is an open source threat intelligence platform.
+
+# MISP(Malware Information Sharing Platform)
+[MISP page](https://www.misp-project.org/)
+Is an open source threat information platform that facilitates the collection, storage and distribution of threat intelligence and IOCs related to malware, cyber attacks, financial fraud.
+MISP is usefull in this cases:
+*   Malware reverse engineering: sharing of malware indicators to understand how different malware families function
+*   Security investigations: searching, validating and using indicators in investigating security breaches
+*   Intelligence analysis: gathering information about adversary groups and their capabilities
+*   Law enforcement: using indicators to support forensic investigation
+*   Risk analysis: researching new threats, their likelihood and occurrences
+*   Fraud analysis: sharing of fincial indicators to detect financial fraud
+The following functionalities:
+*   IOC database
+*   Autoatic correlation: indication of relationships between attributes and indicators from malware, attack compaign or analysis
+*   Data sharing
+*   Import and Export features
+*   Event graph
+*   API support
+
+
+# TheHive
+Is a scalable, open source and free Security Incident Response Platform.
+[Main page](https://thehive-project.org/)
+The features are:
+*   Case/Task management: each case can be broken down into one or more tasks.
+*   Alert Triage: cases can be imported from SIEM alerts, email reports and other security event sources
+*   Observable enrichment with Cortex: Cortex is an observable analysis and active response engine. Allow analysts to collect more information from threat indicator by performing correlation analysis and developing patterns.
+*   Active response: allow analysts to use Responders and run active actions to communicate, share info about incidents and prevent or contain threat.
+*   Custom dashboards: statistics on cases, tasks, observables, metrics and more
+*   Built-in MISP(Malware Information Sharing Platform) integration: another useful integratios is with MISP. This allow analysts to create cases from MISP events, import IOCs or export their own identified indicators to their MISP communities.
+
+On the creation of a new case:
+*   Severity: is the level of danger
+*   TALP: traffic light protocol is a set of designations to ensure that sensitive information is shared with the appropriate audience.
+*   PAP: permissible actions protocol is used to indicate what an analyst can do with the information , if an attacker can easy detect the analysis state or the defensive action in place.
