@@ -222,7 +222,8 @@ Is an online Yara feed.
 
 ## OpenCTI
 
-Is an open source threat intelligence platform.
+Is an open source threat intelligence platform. Is a typically a managerial mystery to handle, with organisations battling with how to input, digest, analyse and present threat data in a way that make sense. The platform can use the MITRE ATT&CK framework to structure the data. It utilize STIX(Structured Threat Information Expression), is a language and serialization format used to exchange cyber threat intelligence(CTI).
+[HitHUB page for OpenCTI](https://github.com/OpenCTI-Platform/opencti)
 
 # MISP(Malware Information Sharing Platform)
 [MISP page](https://www.misp-project.org/)
@@ -241,6 +242,11 @@ The following functionalities:
 *   Import and Export features
 *   Event graph
 *   API support
+[MISP manual](https://www.circl.lu/doc/misp/)
+Taxonomies are used on MISP to categortise events, it can be used to:
+*   Set events for then being processed by external tools(VirusTotal)
+*   Ensure events are classified appropriately before being published
+*   Enrich intrusion detection systems' export values
 
 
 # TheHive
@@ -258,3 +264,10 @@ On the creation of a new case:
 *   Severity: is the level of danger
 *   TALP: traffic light protocol is a set of designations to ensure that sensitive information is shared with the appropriate audience.
 *   PAP: permissible actions protocol is used to indicate what an analyst can do with the information , if an attacker can easy detect the analysis state or the defensive action in place.
+
+## TLP
+Traffic Light Protocol was created to facilitate greater sharing of potentially sensitive information and more effective collaboration, is a set of four labels used to indicate the sharing boundaries to be applied by the recipients. The four labels are TLP:RED, TLP:AMBER, TLP:GREEN, TLP:CLEAR.
+*   TLP:RED: is used when information cannot be effectively acted upn without significant risk for the privacy, reputation or operations, recipients may therefore not share TLP:RED information with anyone else.
+*   TLP:AMBER: limited disclosure, recipients can only spread this on a need-to-know basis within their organization and its clients. TLP:AMBER+STRICT restricts sharing to the organization only.
+*   TLP:GREEN: limited disclosure, recipients can spread this within their community, it can be used when information is useful to increase awareness within their community.
+*   TLP:CLEAR: recipients can spread this to the world, there is no limit on disclosure.

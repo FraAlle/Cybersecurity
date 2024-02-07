@@ -26,3 +26,6 @@ Difference between POP3 and IMAP
 
 [Email spoofing](https://www.proofpoint.com/us/threat-reference/email-spoofing)
 [BEC(Business Email Compromise)](https://www.proofpoint.com/us/threat-reference/business-email-compromise)
+[urlscan.io](https://www.urlscan.io)
+[phishing tool](https://www.phishtool.com)
+[Talos Intelligence, check for sending emails IP](https://talosintelligence.com/)
