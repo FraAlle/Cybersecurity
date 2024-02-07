@@ -162,6 +162,7 @@ STIX(Structured Threat Information Expression) is a language developed for the "
 [urlscan.io](https://www.urlscan.io)
 [abuse.ch](https://www.abuse.ch) identify and tack malware and botnets through several operational platforms
 [phishing tool](https://www.phishtool.com)
+[Talos Intelligence, check for sending emails IP](https://talosintelligence.com/)
 
 ## YARA
 
