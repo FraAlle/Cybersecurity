@@ -17,7 +17,7 @@ The main approaches is the Access Control, and his keys are:
 Key elements of the threat control:
 *   IDS/IPS
 *   Data loss prevention(DLP)
-*   Endpoint protection: 
+*   Endpoint protection
 *   Cloud security
 *   SIEM
 *   Security Orchestration Automation and Response(SOAR): it helps automate tasks
