@@ -70,5 +70,3 @@ knock -d 300 10.5.0.10(IP) 2024 2000 9898 para nockear y luego hacer ssh
 y para cerrar knock -d 300 %IP% 9898 2000 2024
 
 OSSEC(HIDS)
-
-
