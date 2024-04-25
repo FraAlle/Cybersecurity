@@ -35,8 +35,8 @@ WAF: fierwall de aplicaciones
 XDR: extended detection and response
 MDR: manage detection and response
 MDM/MTM: defensa para moviles(empresa como Pegasus)
-DMZ: zonas demilitarizadas(?)
-HA: ?
+DMZ: zonas demilitarizadas, para poder proteger la LAN, el web server es instalado en un PC diferente
+HA(High Availability): firewall clusters are designed to minimize downtime for critical systems through the use of redundant systems
 RGPD: normativa europea
 Puesto en un plan de contingencia:
     RTO: tiempo permitido en el plan de servicio perdido
