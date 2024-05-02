@@ -13,3 +13,5 @@ Puesto en un plan de contingencia:
     RTO: tiempo permitido en el plan de servicio perdido
     RPO: cantidad de datos que se pueda perder
 VPC: virtual private cloud
+IRM(Information Protection)
+DLP(Data Leak)
