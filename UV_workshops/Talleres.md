@@ -36,6 +36,10 @@ find. -type f- -exec sh -c 'echo "Analizando archivo: $1"; ssh-keygen -l -f $1' 
 contraseña maquina wido T4ll3r_H4ck1nG_2024!
 correo para el premio: sermomo3@alumni.uv.es
 
+
+# Ejercicio extra Taller Hacking Ofensivo
+**Ganar root privileges de una maquina utilizando una vulnerabilidad de buffer overflow**
+
 run $(python2 -c 'print "A"*88')
 
 

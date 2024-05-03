@@ -1,4 +1,4 @@
-## TERMINOLOGY
+# TERMINOLOGY
 
 [Glossary](https://csrc.nist.gov/glossary)
 
@@ -26,7 +26,7 @@ An **internal threat** can be a current or former employee, an external vendor, 
 
 **Sensitive personally identifiable information (SPII)**: A specific type of PII that falls under stricter handling guidelines
 
-## ATTACKS
+# ATTACKS
 
 **Phishing**:
 *    *Business Email Compromise (BEC)*:A threat actor sends an email message that seems to be from a known source to make a seemingly legitimate request for information, in order to obtain a financial advantage.
@@ -43,7 +43,7 @@ An **internal threat** can be a current or former employee, an external vendor, 
 *    *Downgrade*
 
 
-## CISSP DOMAINS
+# CISSP DOMAINS
 
 **Security and risk managment** focuses on defining security goals and objectives, risk mitigation, compliance, business continuity, and the law(security analysts may need to update company policies related to private health information if a change is made)
 **Asset security** ensecure physical and digital assets, is related to storage,maintenance, retention and descrution of data.

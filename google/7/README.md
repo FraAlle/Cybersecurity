@@ -1,4 +1,4 @@
-## Python
+# Python
 
 In python, "\w" search for any alphanumeric character, "+" match for any occurensy of the specified character.
 For example: "b\wa+b" search for anything that start with b and has "ab" in the string.
@@ -13,15 +13,15 @@ Seeking emails using notation
 *   `\d{2}` search for all numbers with 2 digits
 *   `\d{1,3}` search for 1 to 3 numbers
 
-# Read files
+## Read files
 `with open ("text.txt","r") as file: ` with handle errors and once finished with the file, it automatically close the file.
 *   `.read()` convert files into strings
 *   if u want to append strings to a text u must use the `a` in the open option and than for write into a file, u just need to use `.write(string)`.
 
-# Split
+## Split
 
 converts a string into a list based on a specified character that's passed into `.split()`.
 
-# Join
+## Join
 
 convert a list into a string

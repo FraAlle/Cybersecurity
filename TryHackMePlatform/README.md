@@ -1,8 +1,8 @@
-## DB for check IPs
+# DB for check IPs
 [AbuseIPDB] https://www.abuseipdb.com/
 [Cisco Talos Intelligence] (https://www.talosintelligence.com/)
 
-## Three-Way Handshake
+# Three-Way Handshake
 
 1. SYN      sync the two devices
 2. SYN/ACK  the packet is sent
@@ -16,13 +16,13 @@ Al the firewlls we have discussed can be either stateful or stateless.
 *   Statefull firewall: analyzes network traffic for characteristics and behavior that appers suspicious and stops them from entering the network. This only acts according to preconfigures rules set by the firewall administrator.
 *   Stateless firewall: operates based on predefined rules and does not keep track of information from data packets. This doesn't store analyzed information neither discover suspicious trends like the stateful firewall does.
 
-## VPN techonologies
+# VPN techonologies
 
 *   PPP: allow authentication and provide encryption
 *   PPTP: Point to Point Tunneling Protocol allow the data from PPP to travel and leave a network.
 *   IPSec: encryots data using the existing IP framework
 
-## HTTP errors
+# HTTP errors
 
 
 *   200 - OK	The request was completed successfully.

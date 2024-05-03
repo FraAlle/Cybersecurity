@@ -1,11 +1,11 @@
-## Incident response lifecycle
+# Incident response lifecycle
 
 CSIRT(Computer Security Incident Response Teams) are a specialized group of security professionals that are trained in incident management and reponse. There are multiple roles on an CSIRT team but these are always necessary:
 * Security analyst: continuosly monitor an environment for any security threats. When an threath is found he escalate it to the appropriate team lead.
 * Technical lead: manage all of the technical aspects of the incident response process, they do first determining the rppt cause of the incident, than elaborated the strategy to contain, eradicate and recover from the incident.
 * Incident coordinator: coordinate with the relevant departments during a security incident, during so the lines of communication are open and clear. Incident coordinator can also be found in other team like SOC.
 
-# SOC(Security operation center)
+## SOC(Security operation center)
 
 Is dedicated to monitoring networks, systems and devices for security threats or attacks. Normally if separated from the CSIRT team. A SOC is involved in various types of blue team activities, such as network monitoring, analysis and respons to incidents.
 
@@ -22,13 +22,13 @@ Skills:
 *   Control refers to the ability to manage technical aspects during incident response, like coordinating resources and assigning tasks.
 *   Communication refers to the ability to keep stakeholders informed.
 
-# NIST lifecycle
+## NIST lifecycle
 *   Preparation
 *   Detection and Analysis
 *   Containment, Eradication, and Recovery
 *   Post-incident activity
 
-## Detection tools
+# Detection tools
 
 **Intrusion detection system(IDS)** is an app that monitors system activity and alerts on possible intrusions. Provides continuos monitoring of network events to help protect against security threats or attacks. This don't stop or prevent the activity.
 *       True positive: correctly detects the presence of an attack
@@ -38,14 +38,14 @@ Skills:
 **Intrusion prevention system(IPS)** is an application that monitors system activity for intrusive activity and takes action to stop it.(Some IDS tool can operate like IPS like Suricata,Snort and Sagan)
 **Endpoint detection and response(EDR)** monitors endpoint for malicious activity and are installed on endpoints. These tools monitor, record and analyze endpoint activity to identify, alert and respond to suspicious activity. Only the EDR collecto endpoint activity data and perform behavioral analysis to identify threat patterns happening on an endpoint.
 
-## How SIEM works
+# How SIEM works
 
 1: SIEM collect and aggregate data, this data is typically in the form of logs which are basically a record of all the events that happened. These data come from IDS or IPS, db, firewalls and applications.
 2: Normalize data by taking all the raw data that SIEM has collected and cleans it up by removing non essential attributes so that only what's relevant is included.
 3: The normalized data gets analyzed according to configured rules to detect any possible security incidents, then they get categorized or reported as alerts for security analysts to review.
 Some SIEM tools are Chronicle and Splunk.
 
-## Monitoring networks
+# Monitoring networks
 
 Baseline in security help establish a standard of expected or normal behavior for systems, devices and networks, in less words, if you know the baseline of a normal network behaviour you'll be better able to identify abnormal network behaviour.
 Once you have determinated a baseline you can monitor a network to identify any deviations from that baseline. Some example of network components that can be monitored:
@@ -57,7 +57,7 @@ Organizations may deploy a network operations center(NOC) which is an organizati
 
 Security analyst monitor networks to identify any sign of potential security incidents known as indicators of compromise(IoC) and protect networks from threats or attacks. IoCs help security analysts detect network traffic abnormalities by providing a way to identify an attack. IoCs provide analysts with specific evidence associated with an attack, such as a known malicious IP address, which can help quickly identify and respond to a potential security incident.
 
-## Capture and view network traffic
+# Capture and view network traffic
 
 A packet capture(P-cap) is a file containing data packets intercepted from an interface or network. It's used during incident investigation.
 
@@ -92,7 +92,7 @@ Source Address: This field specifies the source address of the sender.
 Destination Address: This field specifies the destination address of the receiver.
 ```
 
-## Incident detecrion methods
+# Incident detecrion methods
 
 **Threat hunting** is the proactive search for threats on a network. Security professionals use threat hunting to uncover malicious activity that was not identified by detection tools and as a way to do further analysis on detections. Threat hunting is also used to detect threats before they cause damage. 
 
@@ -105,17 +105,17 @@ Destination Address: This field specifies the destination address of the receive
 
 **Honeypots** are systems or resources that are created as decoys vulnerable to attacks with the purpose of attracting potential intruders.
 
-## Indicators of compromise 
+# Indicators of compromise 
 
 Indicators of compromise(IoCs) are observable evidence that suggests sign of a potential security incident, the charts specific pieces of evidence that are associated with an attack. [Pyramid of pain](http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html).
 
 **Indicator of attack(IoA)** are the series of observed events that indicate a real-time incident. Focus on identifying the behavioral evidence of an attacker.
 
-## Crowdsourcing
+# Crowdsourcing
 
 Is the practice of gathering information using public input and collaboration. Threat intelligence platforms use crowdsourcing to collect information from the global cybersecurity community. Without this, attac,ers can performs the same attacks against multiple organizations.
 
-## Documentation
+# Documentation
 
 **Digital forensic** is the process the practice of collecting and analyzing data to determine what has happened after an attack.
 
@@ -126,7 +126,7 @@ There are 3 types of playbooks:
 *   automated: automate tasks in incident response processes(categorizing the severity of the incident or gahtering evidence, SOAR(Security Orchestration, Automation and Response) and SIEM can be configured as automated playbooks.)
 *   semi-automated: combine automated tasks with human actions
 
-## Triage
+# Triage
 
 Before an alert get escaleted it goes through a triage process, which they prioritizes incidents according to their level of importance or urgency.
 *   Receive and assess: this involves gathering as much information as possible about the alert, including details about the activity that triggered the alert
@@ -138,7 +138,7 @@ Before an alert get escaleted it goes through a triage process, which they prior
 *   Warm sites: contains a fully updated and configured version of the hot site. These are not fully operational and available for immediate use but can quickly be made operational after a  failure or disruption occurs.
 *   Cold sites: a backup facility equipped with some of the necessary infrastructure required to operate an organization's site. When a failure occurs, cold sites might not be ready to use and might need additional work to be operational.
 
-## Logs
+# Logs
 
 Types:
 *   Netowrk: network devices create logs, like firewall, routers or switches.
@@ -150,7 +150,7 @@ Types:
 Authentication log example: ```Login Event [05:45:15] User1 Authenticated successfully```
 More verbous: ```Login Event [2022/11/16 05:45:15.892673] auth_performer.cc:470 User1 Authenticated successfully from device1 (192.168.1.2)```
 
-## Log formats
+# Log formats
 
 *   JSON(JavaScript Object Notation): is a file format used to store and transmit data, is easy to read and write and used in cloud environment
 *       Key-value pairs: is a set of data that represents two linked items `"Alert":"Malware"`
@@ -198,7 +198,7 @@ More verbous: ```Login Event [2022/11/16 05:45:15.892673] auth_performer.cc:470 
         </EventData>
         ```
 
-## IDS
+# IDS
 
 **Host based intrusiond detection systems(HIDS)** monitors the activity of the host where is installed.
 **Network based intrusion detection system(NIDS)** collect and monitors network traffic and network data. Is installed on devices located at specific parts of the netwrork that you want to monitor.
@@ -210,13 +210,13 @@ is a detection method that is used to find events of interest. A signature is a 
 *   Signatures requires updates: relies on a databse of signatures to detect threats
 *   Inability to detect unknown threats
 
-# Anomaly based analysis
+## Anomaly based analysis
 identify abnormal behavior, there are two phases: the training phase(a baseline of normal or expected behavior must be established) and the detection phase(the current system activity is compared against this baseline). Baseline are developed by collecting data that corresponds to normal system behavior. Activity that happens outside of the baseline gets logged and an alert is generated.
 *   Ability to detect new and evolving threats
 *   High rate of false positive
 *   Pre-existing compromise: the existence of an attacker furing the training phase will include malicious beheavior in the baseline
 
-## Suricata
+# Suricata
 
 *   EVE JSON: extensible event format javascritp object notation
 *   FAST LOG: record minimal alert information including basic IP address and port details about the network traffic
@@ -224,12 +224,12 @@ Suricata creates two types of log data:
 *   Alert logs: cotain information that's relevant to security investigations, output of signatures which have triggered an alert.
 *   Network telemetry logs: contain information about network traffic flows, network telemetry is not always security relevant, it's simply recording wht's happening on a network such as connection being made to a specific port.
 
-# Alert
+## Alert
 The alert keyword instructs to alert on selected network traffic. The IDS will inspect the traffic packets and send out an alert in case it matches.
 Note that the drop action also generates an alert, but it drops the traffic. A drop action only occurs when Suricata runs in IPS mode.
 The pass action allows the traffic to pass through the network interface. The pass rule can be used to override other rules. An exception to a drop rule can be made with a pass rule.
 The reject action does not allow the traffic to pass. Instead, a TCP reset packet will be sent, and Suricata will drop the matching packet. A TCP reset packet tells computers to stop sending messages to each other.
 
-## SIEM tools
+# SIEM tools
 
 Is possible to manually upload data or use software to help collect data for log ingestion. Manually uoloading data is inefficient so is possible to use log forwarding programs. These automatically collect and send log data.

@@ -1,4 +1,4 @@
-## More about CISSP
+# More about CISSP
 
 **Security and risk managment** these are some of the usage areas:
 *   **Defining security goals** can reduce risks to critical assets and data like PII
@@ -14,7 +14,7 @@
 **Security operations**  is focused on conducting investigations and implementing preventative measures.
 **Software development security** this focuses on using secure coding practices.
 
-## National Institue of Standards and Technology(NIST) Risk Managment Framework(FRM)
+# National Institue of Standards and Technology(NIST) Risk Managment Framework(FRM)
 
 *   **Prepare** refers to actions necessary to manager security and privacy risks before a breach occurs.
 *   **Categorize** is used to develop risk management processes and tasks.

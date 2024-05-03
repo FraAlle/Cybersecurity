@@ -1,4 +1,4 @@
-## Cloud computing
+# Cloud computing
 
 A cloud service provider(CSP) is a company that offers cloud computing services. 
 *   **Software as a Service(SaaS)** refers to software suites operated by the CSP that a company can use remotely
@@ -7,7 +7,7 @@ A cloud service provider(CSP) is a company that offers cloud computing services.
 
 The benefits of using cloud computing are: Reliability, Cost and Scalability.
 
-## TCP/IP layers
+# TCP/IP layers
 
 *   **1 Network access** deals with creation of data packets and their transmission across a network. ARP(Address Resolution Protocol) help IP with directing data packets on the same physical networking by mapping IP to MAC addresses on the same local network.
 *   **2 Internet** is where IP are attached to data packets to indicate the location of the sender and receiver. This layer is responsible for delivering the data packets:
@@ -16,7 +16,7 @@ The benefits of using cloud computing are: Reliability, Cost and Scalability.
 *   **3 Transport** includes protocols to control the flow of traffic across a network.
 *   **4 Application** determine how the data packets will interact with receiving devices. Some commons protocols are: HTTP, SMTP(Simple Mail Tranfer Protocol), SSH, FTP(File Transfer Protocol),DNS
 
-## OSI layers
+# OSI layers
 
 *   Layer 7 Application: this includes all of the networking protocols that software applications use to connect a user to the internet.(HTTP, HTTPS, SMTP, DNS)
 *   Layer 6 Presentation: involve data translation and encrypting for the network. SSl encrypts data between web servers and browsers as part of the websites with HTTPS.
@@ -26,7 +26,7 @@ The benefits of using cloud computing are: Reliability, Cost and Scalability.
 *   Layer 2 Data linker: organizes sending and receiving data packets within a single network.
 *   Layer 1 Physical: correspond to the physical hardware involved in network transmission.
 
-## IPv4 header fields
+# IPv4 header fields
 
 [Header fields](https://en.wikipedia.org/wiki/Internet_Protocol_version_4#/media/File:IPv4_Packet-en.svg).
 
@@ -58,7 +58,7 @@ The benefits of using cloud computing are: Reliability, Cost and Scalability.
 
 [Difference between IPv4 and IPv6 header](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/PNld6YkmQNWyhZjFFHvC-Q_eb474e5ee3b3416fbc06a639503342f1_CS_R-044_IPv4-and-IPv6.png?expiry=1693958400000&hmac=CYAK2GN2CTXtekvkeh_wcuyUv-UV5VpRN895pRybewo).
 
-## Network protocol
+# Network protocol
 
 Is a set pf rules used by two or more devices on a network to describe the order of delivery and the structure of data.
 There are 3 categories of networks protocols:
@@ -83,7 +83,7 @@ There are 3 categories of networks protocols:
 
 IEEE is for Institue of Eletrical and Electronic Engineers, which is an organization that maintains Wi-Fi standards and the 802.11 is a suite of protocols used in wirelesse comunication.
 
-## Firewall
+# Firewall
 
 Is a network security device that monitors traffic to and from your network.
 **Hardware firewall** inspects each data packets before it's allowed to enter the network.
@@ -96,7 +96,7 @@ Al the firewlls we have discussed can be either stateful or stateless.
 
 The next gen firewall, the NGFW, provides even more security than a statefull firewall, not only provide stateful inspection of incoming and outgoing traffic, but it also performs more in-depht security functions like deep packet inspection and intrusion protection.
 
-## Security zones
+# Security zones
 
 Are a segment of a network that protects the internal network from the internet. They are a part of a security technique called network segmentation that divides the network into segments. Each segment has its own access permissions and security rules. Security zones act like a barrier to interal networks, maintain privacy within corporate groups and prevent issues from spreading to the whole network.(Free Wi-Fi hotel)
 
@@ -105,13 +105,13 @@ An organization's network is classified into two types of security zones.
 *   Controlled zone which is a subnet that protects the interal network from the uncontrolled zone. There are several types of them. On the router layer is the demilitarized zone(DMZ) wich contais public-facing services that can access the servers tnat provides IP for internet users. The DMZ acts as a network perimeter to the internal network.
 [Example](https://s3.amazonaws.com/kajabi-storefronts-production/blogs/3184/images/9hFpYzphSaawzqta0OQm_Picture2.png)
 
-## Proxy
+# Proxy
 
 Proxy fulfills the request of a client by forwanding them on to other servers. The proxy is a dedicated server that sits between the itnernet and the rest of the network. When an request is coming, the proxy will determine if the connection request is safe. This hides the private IP address from malicious actors on the internet and adds a layer of security.
 *   **Forward proxy server** regulates and restricts a person with access to the internet, the goal is to hide the IP address and approve all outgoing requests.
 *   **Revers proxy server** regulates and restricts the internet access to an internal server. The goal is to accept traffic from external parties, approve it and forward it to the interal servers. Is used because it protects internal web servers containing confidential data from exposing thei IP to external parties.
 
-## VPN protocols
+# VPN protocols
 
 WireGuards and IPSec are two different VPN protocols used to encrypt traffic over a secure network tunnel.
 *   WireGuard: is an high-speed VPN protocol with advanced encryption to protect users. It's simple to set up and maintain, can be used to site-to-site and client-server connections. Is also open source, which makes it easier for users to deploy and debug.
@@ -125,7 +125,7 @@ Distributed Denial of Service.
 *   **ICMP(Internet Control Message Protocol) flood** is an internet protocol used by devices to tell each other about data transmission errors across the network(status request). An attacker repetedly sends ICMP packets to a network server. This force sthe server to send an ICMP packet and this eventually fill the whole bandwith for incoming and outgoing traffic.
 *   **Ping of death** is caused when a hacker pings a system by sending it an oversized ICMP packet taht is bigger thay 64 kB, this will overload the system and cause it to crcash.
 
-## tcpdump
+# tcpdump
 
 This is a packet sniffer(or protocol analyzer, like wireshark). This is text based, this means that every command are executed in the terminal. It provides a brief packet analysis and converts key information about network traffic into formats easily read by humans.
 tcpdump prints the output of the command as the sniffed packets in the command line after a command is executed. [Example of a packet](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/B-PaECh0ToSFgBWpFczYZg_4896abe8c06443f08eec4dc003dcf8f1_image.png?expiry=1694044800000&hmac=lPGLgqx9zDJf5V27aCMACRo5wbv1tWUbAHmKvrLx-PA).
@@ -135,7 +135,7 @@ tcpdump prints the output of the command as the sniffed packets in the command l
 *   Destination IP
 *   Destinatio port
 
-## Packet sniffing
+# Packet sniffing
 
 *   Passive: packets are read in transit, since all the trafic is visible to any host on the hub, malicious actors can view all the information going in and out of the device they are targeting.
 *   Active: packets are manipulated in transit.
@@ -146,21 +146,21 @@ tcpdump prints the output of the command as the sniffed packets in the command l
 *   Make sure that the websites used have HTTPS
 *   Avoid using unprotected Wi-Fi
 
-## IP spoofing
+# IP spoofing
 
 Is a network attack performed when an attacker changes the source IP of a data packet to impersonate and authorized system and gain access to a network, the hacker pretende to be someone they are not so they can communicate over the network with the target computer and get past firewall rules. Some commons spoofing attacks are on-path, reply and smurf.
 *   On-path attack is an attack where the malicious actor places themselves in the middles of an authorized connection and intercepts or alters the data in transit. They gain access to the network and put themselves between two devices.
 *   Replay attack is performed when a malicious actor intercepts a data packet in transit and delays it or repeats it at another time. It can cause connection issues between target computers, or a malicious acotr may take a network transmission that was sent by an authorized user and repeat it at a later time to impersonate the authorized user.
 *   A smurf attack is a combination of DDoS attack and an IP spoofing attack. The attacker sniff an authorized user's IP and floods it with packets, this can bring down a server or the entire network.
 
-# Way to defend from 
+## Way to defend from 
 
 *   Encryption
 *   Firewall can be configured to protect against IP spoofing, so if a firewall receive a data packet from the internet where the sender's IP is the same as the private network, then the firewall will deny the transmission since all the devices with that IP should already be on the local network.
 
 ## [Learn how to read wireshark](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/introduction-to-network-trace-analysis-3-tcp-performance/ba-p/3737115)
 
-## Security hardening
+# Security hardening
 
 This is the process of strenghening a system to reduce its vulneranility and attack surface. All the potential vulnerabilities that a threat actor could exploit are referred to as a system's attack surface.
 *   Software updates
@@ -183,17 +183,17 @@ Tasks performed once:
 *   Network segmentation to separate different security zones
 *   Communication encrypted
 
-#   Sandboxes
+##   Sandboxes
 
 Is a type of testing environment that allowa you to execute software or programs separate from your network. Can be stand-alone physical computers that are not connected to a network.
 
-#   Prevent Brute force attacking
+##   Prevent Brute force attacking
 *   Salting and hasing: hashing converts information into a unique value that can then be used to determine its integrity, it's a one-way function and salting add random characters th hased password.
 *   MFA and 2FA
 *   CAPTCHA and reCAPTCHA
 *   Password policies: standardize good password practices throughout the business
 
-## Network security applications
+# Network security applications
 
 **Intrusion detection system(IDS)** is an application that monitors system activity and alerts on possible intrusions. It detect known attacks, often sniff packets as they move across the network and analyze them for the characteristics of know attacks. IDS only scans for obvious anomalies, don't block them.
 

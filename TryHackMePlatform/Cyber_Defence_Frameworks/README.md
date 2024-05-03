@@ -1,13 +1,13 @@
-## Fast Flux
+# Fast Flux
 
 Is a DNS technique used by botnets to hide hishing, web proxying, malware delivery and malware communications activities behind compromised hosts acting as proxies. The true purpoes behind this technique is to hide the malware communication and make it hard for security professionals to discover the malware.
 The primary concept it having multiple IP addresses with a domain name, which is constantly changing.
 
-## TTPs(Tactics, Techniques & Procedures)
+# TTPs(Tactics, Techniques & Procedures)
 
 An example is the Pass-The-Hash attack: an attacker capture an hash password and pass it through for authentication and lateral access(is usable after gaining access to move deeper into a network searching for assets, the attacker maintains ongoing access by moving in the environment and obtaining more privileges) to other networked systems
 
-## Cyber kill chain
+# Cyber kill chain
 
 This framework define the steps to make use for hackers. Is usefull to protect against ransomware, security breaches and APTs(Advanced Persistent Threats).
 1. Reconnaissance: is discovering and collecting info on the victim, utilizing OSINT(Open-Source Intelligence-> free services where you can found info about one person) too. Email harvesting is the process to obtain emails from public, paid or free services and can be used for an phishing attack. Some site to gather info are: [theHarvester](https://github.com/laramies/theHarvester) / [Hunter.io](https://Hunter.io) / [OSINT](https://osintframework.com/)
@@ -36,10 +36,11 @@ This framework define the steps to make use for hackers. Is usefull to protect a
     b. the infected machines makes constant DNS requests to the DNS server that belongs to an attacker, DNS tunneling
 7. Actions on objectives: in the end the hacker can do whatever he want with the victim's machine
 
-## Unified kill chain
+# Unified kill chain
 
 Is a way to explain various stages of an attack, for example: after an attacker scanning, exploiting a web vulnerability and escaleting privileges will be a "Kill Chain".
-# Threat modelling
+
+## Threat modelling
 Is a series of steps to ultimately improve the security of a system.
 1. Idetifying what systems and applications need to be secured and what function they serve in the environment.
 2. Assessing what vulnerabilities and weaknesses these systems and applications may have and how they could be potentially exploited.
@@ -48,7 +49,7 @@ Is a series of steps to ultimately improve the security of a system.
 
 The UKC states that there are 18 phases to an attack.[Immage of the 18 phases](https://tryhackme-images.s3.amazonaws.com/user-uploads/5de96d9ca744773ea7ef8c00/room-content/708e85cf63230b21bacee32bfbd6d311.png).
 
-# Initial Foothold
+## Initial Foothold
 The main focus for an attacker to gain access to a system or network. This series of phases also accomodates for an attacker to creat a form of persistence.
 1. Reconnaissance: gather information about the victim. Discover what system and services are running on the target, finding contact lists of employees that can be impersonated or used, looking for potential credential and understanding the network topology.
 2. Weaponization: Setting up the necessary infrastructure to make an attack.
@@ -67,7 +68,7 @@ The main focus for an attacker to gain access to a system or network. This serie
 8. C2: execute commands, steal data and use the controlled server to pivot other systems.
 9. Pivoting: is used to reach other systems within a network that is no other way accessible.
 
-# Network propagation
+## Network propagation
 The attacker try to gain additional access and privileges to systems and data to fulfil their goals.
 10. Discovery: the attacker would uncover information about the network it is connected to. Is important to gather info about active accounts, permission granted, applications and software in use, web browser activity, files, directories, network shares and system configuration.
 11. Privilege escalation: the attacker will try to gain more permissions with the pivot system, he will leverage the information from accout presents with vulnerabilities or misconfiguration. 
@@ -75,13 +76,13 @@ The attacker try to gain additional access and privileges to systems and data to
 13. Credential Access: the attacker try to steal account names and passwords through various attacks method, keylogging and credential dumping.
 14. Lateral movement: move throught the network and jump onto another targeted systems to achieve their primary objective.
 
-# Action on Objectives
+## Action on Objectives
 15. Collection: seek to gather all the valuable data of interest.
 16. Exfiltration: steal data which can be packaged using encryption measures and compression to avoid any detection
 17. Impact: if the adversary seek to compromise the integritu and availability of the data assets they would manilulate, interrupt or destroy assets.
 18. Objectives: here the attacker can reach his goals.
 
-## Diamond model
+# Diamond model
 It helps identihy the elements of an intrusion.
 Is composed by four features:
 *   adversary: is the person behind the cyberattack. 
@@ -108,20 +109,20 @@ Plus we can add 6 more meta-feture, those are not required but can add valuable 
 *   Methodology: allow an analyst to describe the general classification of intrusion(phishing DDoS, breach, port scan, etc)
 *   Resources: every intrusion event needs one or more external resources to be satisfied to succeed.
 
-## MITRE
+# MITRE
 APT(Advanced Persistence Threat), can be considered a team or coutry that engages a long-term attacks against organizations or countris.
 TTP(Tactics, Techniques and Procedures):
 *   Tactic: is the hacker goal
 *   Technique: is the method to achieve that goal
 *   Procedure: is how those techniques are executed 
 CAR(Cyber Analytics Repository) is a knowledfe base of analytics developed by MITRE.
-# MITRE ENGAGE
+## MITRE ENGAGE
 Is a framework for planning adversary engagement operations that empowers you to engage your adversaries and achieve your goals.
 *   Cyber Denial: prevent the adversary's ability to conduct thei operations.
 *   Cyber Deception: we intentionally plan artifacts to mislead the adversary.
 MITRE formed an organization named CTID(Center of Threat-Informed Defense). This organization consists of various companies and vendors from around the globe.
 
-## CTI(Cyber Threat Intelligence)
+# CTI(Cyber Threat Intelligence)
 Evidence-based knowledge about adversaries, including their indicators, tactics, motivations and actionable advice against them.
 In this environmente some common words change their meaning:
 1. Data: IP addresses, URLs and hashes
@@ -152,7 +153,7 @@ TAXII(The Trusted Automated eXchange of Indicator Information) defines protocols
 
 STIX(Structured Threat Information Expression) is a language developed for the "specification, capture, characterisation and communication of standardised cyber threat information".
 
-## Threat intelligence tools
+# Threat intelligence tools
 
 *   Strategic intel: high level intel that looks into the organisation's threat landscape and maps out the risk areas based on trend, patterns and emerging threats that may impact business decision
 *   Tecnical intel: looks for evidance used by an adversary, this can be used by response teams to create a baseline attack surface to analyse and develop defence mechanisms
@@ -164,12 +165,13 @@ STIX(Structured Threat Information Expression) is a language developed for the "
 [phishing tool](https://www.phishtool.com)
 [Talos Intelligence, check for sending emails IP](https://talosintelligence.com/)
 
-## YARA
+# YARA
 
 Yara is based on rules, and to utilize it we need a rule and the name file/the path.
 [Yara guide complete](https://yara.readthedocs.io/en/stable/writingrules.html)
 Check for file which contains "Hello world!" wrote in those ways
-"""
+
+```
 rule helloworld_checker{
 	strings:
 		$hello_world = "Hello World!"
@@ -179,53 +181,53 @@ rule helloworld_checker{
 	condition:
 		any of them
 }
-"""
+```
 [Usefull links for yara 1](https://www.bsk-consulting.de/2015/02/16/write-simple-sound-yara-rules/)
 [Usefull links for yara 2](https://www.bsk-consulting.de/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/)
 [Usefull links for yara 3](https://www.bsk-consulting.de/2016/04/15/how-to-write-simple-but-sound-yara-rules-part-3/)
 
 
-# Cuckoo sandbox
+## Cuckoo sandbox
 
 Is an automated malware analysis environment, this allow to generate Yara rules based upon the behaviours discovered from Cuckoo.
 
-# Pythonn PE(a file formato for executables DLLs, FONS)
+## Pythonn PE(a file formato for executables DLLs, FONS)
 
 Allows to create rules with Yara from the various sections and elements of the Windows Portable Executable(PE) structure.
 
 [GITHUB yara resources](https://github.com/InQuest/awesome-yara)
 
-# LOKI
+## LOKI
 Is a free Indicator of Compromise(IoC)
 [Full github readme page of LOKI](https://github.com/Neo23x0/Loki/blob/master/README.md)
 
 We can use Loki to scan on the endpoint.
 
 
-# THOR
+## THOR
 Is a multi-platform IOC and YARA scanner. It limit the use of the CPU.
 [THOR download](https://www.nextron-systems.com/thor-lite/)
 
-# FENRIR
+## FENRIR
 Fenrir is a bash script, it runs on every system.
 [GITHUB](https://github.com/Neo23x0/Fenrir)
 
-# yarGen
+## yarGen
 Is a generator for YARA rules.
 Exist and analyzer to yara rules. [yarAnalizer](https://github.com/Neo23x0/yarAnalyzer/)
 Once we created a rule we must move it to the directory where all yara rules are and than we can try again the scan.
 
-# Valhalla
+## Valhalla
 Is an online Yara feed.
 [Valhalla](https://valhalla.nextron-systems.com/)
 
 
-## OpenCTI
+# OpenCTI
 
 Is an open source threat intelligence platform. Is a typically a managerial mystery to handle, with organisations battling with how to input, digest, analyse and present threat data in a way that make sense. The platform can use the MITRE ATT&CK framework to structure the data. It utilize STIX(Structured Threat Information Expression), is a language and serialization format used to exchange cyber threat intelligence(CTI).
 [HitHUB page for OpenCTI](https://github.com/OpenCTI-Platform/opencti)
 
-# MISP(Malware Information Sharing Platform)
+## MISP(Malware Information Sharing Platform)
 [MISP page](https://www.misp-project.org/)
 Is an open source threat information platform that facilitates the collection, storage and distribution of threat intelligence and IOCs related to malware, cyber attacks, financial fraud.
 MISP is usefull in this cases:
@@ -249,7 +251,7 @@ Taxonomies are used on MISP to categortise events, it can be used to:
 *   Enrich intrusion detection systems' export values
 
 
-# TheHive
+## TheHive
 Is a scalable, open source and free Security Incident Response Platform.
 [Main page](https://thehive-project.org/)
 The features are:
@@ -265,7 +267,7 @@ On the creation of a new case:
 *   TALP: traffic light protocol is a set of designations to ensure that sensitive information is shared with the appropriate audience.
 *   PAP: permissible actions protocol is used to indicate what an analyst can do with the information , if an attacker can easy detect the analysis state or the defensive action in place.
 
-## TLP
+# TLP
 Traffic Light Protocol was created to facilitate greater sharing of potentially sensitive information and more effective collaboration, is a set of four labels used to indicate the sharing boundaries to be applied by the recipients. The four labels are TLP:RED, TLP:AMBER, TLP:GREEN, TLP:CLEAR.
 *   TLP:RED: is used when information cannot be effectively acted upn without significant risk for the privacy, reputation or operations, recipients may therefore not share TLP:RED information with anyone else.
 *   TLP:AMBER: limited disclosure, recipients can only spread this on a need-to-know basis within their organization and its clients. TLP:AMBER+STRICT restricts sharing to the organization only.

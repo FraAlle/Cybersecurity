@@ -1,4 +1,4 @@
-## Traffic analysis
+# Traffic analysis
 
 Network security operations contain three base control levels:
 *   Physical: prevent unauthorised componentes
@@ -26,11 +26,11 @@ Key elements of the threat control:
 Managed security service
 MSS(Managed Security Services) are services that have been outsourced to service providers(MSSPs).
 
-## IDS
+# IDS
 *   Network Intrusion Detection System: monitors the traffic flow from various areas of the network.
 *   Host-based Intrusion Detection System: monitors the traffic from a single endpoint device.
 
-## IPS
+# IPS
 It stop/prevent/terminate the suspicious activity as the detection is performed.
 *   Network intrusion prevention system(NIPS): monitor the traffic flow various areas of the network, if something is identified, the connection is terminated.
 *   Behaviour-based intrusion prevention system(NBA): monitor the traffi flow from various areas of the network, if something is detected the connection is terminated. This method need a period of "learning" to learn the normal traffic and differentiate the malicious traffic and threats. The system is trained with the normality to detect anormality.

@@ -4,7 +4,7 @@
 * Data custodians assign and remove access to software or hardware. Custodians are responsible for implementing security controls for the data they are responsible for, granting and revoking access to that data.
 * Data protection officers (DPOs) are responsible for monitoring the internal compliance of an organization’s data protection procedures. These individuals advise the security team on the obligations required by the organization's data protection standards and procedures.
 
-## Stakeholders
+# Stakeholders
 
 * A Chief Information Security Officer, also known as the CISO, is the highest level of security stakeholder. You are unlikely to communicate directly with this stakeholder as an entry-level analyst. 
 * A Chief Financial Officer, also known as the CFO, is another high-level stakeholder that you’re unlikely to communicate with directly.

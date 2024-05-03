@@ -1,4 +1,4 @@
-## Introduction to assets
+# Introduction to assets
 
 Different type of security assets:
 *   Restricted is the highest level. This category is reserved for incredibly sensitive assets,  like need-to-know information.
@@ -9,28 +9,28 @@ Different type of security assets:
 
 *   Public is the lowest level of classification. These assets have no negative consequences to the organization if they’re released.
 
-## Cloud based services
+# Cloud based services
 
 This refers to a variety of on demand or web-based business solutions.
 *   SaaS: front-end application that users access via a web browser. It provide host, manage and maintain all of the back-end systems for those applications(Gmail,Slack,Zoom).
 *   PaaS(Platform as a Service): back-end application development tools that clients can access online. Write code and build, manage and deploy thei own apps(Google App Engine, Heroku, VMware Cloud Foundry).
 *   IaaS(Infrastructure as a Service): remote access to a range of back-end systems that are hosted by the cloud service provider. Data processing servers, storage, networking resources and more(Google Cloud, Azure).
 
-# Cloud security
+## Cloud security
 
 *   Misconfiguration is one of the biggest concerns. Customers of cloud-based services are responsible for configuring their own security environment. Oftentimes, they use out-of-the-box configurations(are typically avaiable for all users by deafult and don't require customization, modification etc) that fail to address their specific security objectives.
 *   Cloud-native breaches are more likely to occur due to misconfigured services.
 *   Monitoring access might be difficult depending on the client and level of service.
 *   Meeting regulatory standards is also a concern, particularly in industries that are required by law to follow specific requirements such as HIPAA, PCI DSS, and GDPR.
 
-## Security plans
+# Security plans
 
 Consist in 3 basic elements:
 *   Policies: set of rules that reduce risk and protects information, focus on the strategic side of things by identifying the scope, objectives and limitations of a security plan.
 *   Standards: tactical function, as they concern how well we'are protecting assets.
 *   Procedures: step-by-step instructions to perform a specifica secuirity task. Organizations usually keep multiple procedure documents that are used in the company. Like how to chose secure passwords, how they can securely reset a password.
 
-## NIST framework
+# NIST framework
 
 Compliance: process of adhering to internal standards and external regulation.
 Cybersecurity Framework(CSF) was developed to help business secure one of their most important assets: information. It consist in 3 components:
@@ -40,13 +40,13 @@ Cybersecurity Framework(CSF) was developed to help business secure one of their 
 *       4(adaotive): function is being performed at an exemplary standard.
 *   Profiles: provides insight into the current state of a security plan(photo capturing a moment in time).
 
-## Security controls
+# Security controls
 
 *   Technical: include the technologies used to protect assets(encryption,authentication system)
 *   Operational: maintaining the day-to-day security environment. People perform these controls like awereness training and incident response.
 *   Managerial: are centred on how the other two reduce risks(policies, standards and procedures).
 
-# Data lifecycle
+## Data lifecycle
 
 * Collect
 
@@ -65,7 +65,7 @@ Type of data:
 
 * SPII is a specific type of PII that falls under stricter handling guidelines. The S stands for sensitive, meaning this is a type of personally identifiable information that should only be accessed on a need-to-know basis, such as a bank account number or login credentials.
 
-# Information privacy
+## Information privacy
 
 * Information privacy: protect of unauthorized access and distribution of data.
 * Information security(InfoSec): practice of keeping data in all states away from unauthorized user.
@@ -81,7 +81,7 @@ Some industry regulations:
 A **security audit** is a revies of an organization's security controls, policies and procedures.
 A **security assessment** is a check to determine how resilient current security implementations are against threats.
 
-## Cryptography
+# Cryptography
 
 Public Key Infrastructure(PKI) is an encryption method that secures the exchange of information online. Is a 2 step process.
 *   The first step is the exchange of encrypted information(asymmetric, symmetric or both). 
@@ -101,12 +101,12 @@ openssl command reverses the encrytion of the file with a secure symmetric ciphe
 -k specifies the password(ettubrute in the example)
 ```
 
-## Hashing
+# Hashing
 
 An hash function is an algorithm that preduces a code that can't be decrypted. Are one-way process that do not generate decryption keys.
 In the MD5 encryption we can add some random strings before the hash begin to give more security to the files, this is called Salting.
 
-## Access controls and authentication system
+# Access controls and authentication system
 
 Access control controls manage access, authorization and accountability of information. Is divided in: authentication, authorization and accounting.
 
@@ -120,18 +120,18 @@ If the right user has been authenticated, the network should ensure the right re
 *   Discretionary access control(DAC): applied when a data owner decides appropriate levels of access.
 *   Role-based access control(RBAC): is used when authorization is determined by a user's role withing the org.
 
-# SSO how it works
+## SSO how it works
 
 SSO works by automating how trust is established between a user and a service provider. SSO use trusted third-parties to prove that a user is who they claim to be, they do this with the exchange of encrypted access tokens between the identity provider and the service provider.
 
-## Connexion with HTTP
+# Connexion with HTTP
 
 Two actions are triggered when the session with a page begin.
 The first is the creation of a session ID, is a unique token that identifies a user and their device while accessing the system. These are attached to the user until the connection end.
 The second is the exchange of session coockies between the server and the user's device. This is a token that website use to validate a session and determine how long that session should last, while this your session ID is read to determine what information the website should show you.
 Cookies make web session more secure because no sensitive information is shared. But, with a stolen cookie an hacker can impersonate a user using their session token(hijacking).
 
-## Cybersecurity layers
+# Cybersecurity layers
 
 1 Perimeter: username and password, mainly this is a user authentication layer.
 2 Authorization: is made with other techinologies like firewalls.
@@ -139,7 +139,7 @@ Cookies make web session more secure because no sensitive information is shared.
 4 Application: this includes all the interfaces that are used to interact with technology. Security measures are programmed as part of an application.
 5 Data: critical data that must be protected, one important control made here is the asset classification.
 
-## Open source intelligence(OSINT)
+# Open source intelligence(OSINT)
 
 Is the collection of information from publicly available sources to generate usable intelligence. It's commonly used to support cybersecurity activities.
 *   Information vs intelligence: **Information** refers to the collection of raw data or facts about a specific subject. **Intelligence** refers to the analysis of information to produce knowledge or insights that can be used to support decision-making.
@@ -152,7 +152,7 @@ OSINT can be used to generate intelligence:
 *   Identify unknown vulnerabilities
 [OSINT framewors](https://osintframework.com/) and [ATT&CK](https://attack.mitre.org/) is used as fundation for the development of specificthreat models.
 
-## Vulnerability assessments
+# Vulnerability assessments
 
 This is the interanl revies process of an organization's security systems, due to this we can found weakness and flaws. The org security team performs, evaluate, scores and fixes them on their own. The goal of vulnerability assessments is to identify weak point and prevent attacks.
 Process:
@@ -161,7 +161,7 @@ Process:
 3: Risk assessment: a score is assigned to each vulnerability. It depends on the likelihood of this happening and how sever the impact would be if the vulnerability were to be exploited.
 4: Remediation: in this step the vulnerabilities that can impact the organizations are addressed.
 
-# Vulnerability scanner
+## Vulnerability scanner
 
 Is a software that automatically compares known vulnerabilities and exoisures against the technologies on the network.
 When the layers scan begin, the scanning tool compares the findings against a database of security threats. At the end of the scan, the tool flags any vulnerabilities that it finds and add them to its reference database.
@@ -170,21 +170,21 @@ The scans are non-intrusive, they only check for vulnerabilities. Types of scans
 *   Authenticated vs unauthenticated: scans whether or not a user has access to a system. Authenticated might test a system by logging in with a real user account, it check for vulnerabilities like broken access controls. Unauthenticated simulate external threat actors that do not have access to your business resources.
 *   Limites vs compehensive: focurs on particular devices that are accessed by internal and external users. Limited scan analyze particular devices on a network, like misconfiguration on a firewall. Comprehensive scan analyze all devices connected to a network. This includes OS, db and more.
 
-## Teams
+# Teams
 
 Red team test simulate attacks to identify vulnerabilities in systems, network or applications
 Blue team test focus on defende and incident response to validate an organization's existing security teams.
 Purple team test are collaborative, focus on improving the security posture of the organization by combining elements of red and blue team.
 [Hackerone](https://hackerone.com/hacktivity/overview)
 
-## Preventing brute force attacks
+# Preventing brute force attacks
 
 *   Hashing and salting
 *   MFA
 *   CAPTCHA
 *   Password policies
 
-## Phising
+# Phising
 
 Phising kits are tool designed to avoid detection and are used from people with little technical background.
 Quick identify an phishing kit:
@@ -198,13 +198,13 @@ Nowdays hackers utilize smishing and vishing and others.
 **Spear phishing** is a subset of email phising where specific people are purposefully targeted, such as accountants of a small business.
 **Whaling** is an spear phishing where you aim for high-ranking executivies in an organization.
 
-## Malwares
+# Malwares
 
 **Filesless malware** don't need to be installed by the user because it uses legitimate programs that are already installed to infect a pc, this type of infection reside in memory.
 **Rooktkits** provides remote administrative access to a computer, open a backdoor to systems. This malware is spread by the combination of two components: dropper and a loader. A dropper is a type of malware that comes packed with malicious code, if the file is opened the malicious code is executed and it hides itself on the target system. A loader is a type of malware that downloads strains of maicious code from an external source and install them onto a target system. With the loader is possible to set-up another malware, a botnet.
 **Botnet** is a collection of computers infected by malware that are under the control of a single hacker.
 
-## Web based exploits
+# Web based exploits
 
 **Cross Site Scripting(XSS)** is an injection attack that inserts code into a vulnerable website or web app, these accats are often delivered by exploiting HTML and JS.
 *   Reflected: malicious script is sent to the server and activated during server's response(criminals send to a target a web link that appears to be secure, when they open it it send an HTTP request to the vulnerable site server, the attacker script is returned back to the innocent user's browser, here the browser loads malicious script because it trusts the server's response).
@@ -218,7 +218,7 @@ A **prepared statement** is a coding technique that executes SQL before passing 
 *   Out-of-band: use a different communication channel, for example an attacker could use a malicious query to create a connection between a vulnerable website and a database they control. This separate channel would allow them to bypass any security controls that are in place on the website's server. These attacks are very uncommon because they only works if a feature is enable on the target server.
 *   Inferential SQL: occurs when an attacker is unable to directly see the results of thei attack, instead they can interpret the results by analyzing the behavior of the system. For example the attacker cause an error message on the login form to understand how is the db composed.
 
-## Threat modeling
+# Threat modeling
 
 Is a process of identifying assets, their vulnerabilities and how each is exposed to threats. Creating them os a lengthy and detauled activity made by people who have years of experience in the field. There are 6 steps to define the scope of a model.
 1: the team determine what they're building by creating an ivnentory of assets and classifying them.
@@ -230,7 +230,7 @@ Is a process of identifying assets, their vulnerabilities and how each is expose
 
 Some frameworks are : STRIDE, PASTA, Trike and VAST.
 
-# PASTA(The Process for Attack Simulation and Threat Analysis)
+## PASTA(The Process for Attack Simulation and Threat Analysis)
  
 The PASTA framework has 7 stages:
 1 define business and security objectives: the team need to decide what their goals are. They need to understand thing like how personally identifiable information is handle.
