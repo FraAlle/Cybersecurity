@@ -1,5 +1,5 @@
-# Cybersecurity Sothis
-Ferias y eventos: ITSA Numberg, S4X Miami(Indutrial), RSA San Francisco, Congreso CCN, INCIBE Leon
+# Cybersecurity Startup Valencia
+**Ferias y eventos**: ITSA Numberg, S4X Miami(Indutrial), RSA San Francisco, Congreso CCN, INCIBE Leon
 
 ## VER FORTINET CURSOS y CCN(ángeles), OPSCURA(separa las maquinas legacy), SINGLAR
 
@@ -15,7 +15,7 @@ Tomar siempre en cuenta la cybersecurity desde el comienzo
 
 ## Libro Cybersecurity y IA: Genius Marker(Cade Metz)
 
-Teoria de la complejidad, mundo programable y mundo no programable
+Teoria de la complejidad y computabilidad, mundo programable y mundo no programable
 
 Bakcup ley 32110
     3 copias como minimo
@@ -50,3 +50,5 @@ escalado vertical: se aumentan las capacidades de un equipo para que aguante má
 escalado horizontal: redondancia de equipos(pon más equipos para que se distribuyen los trabajos), recomendable al principio
 
 
+## NAC
+POner visibilidad, utilizar aplicaciones para que todo el sistema sea visual y claro.
