@@ -51,4 +51,13 @@ escalado horizontal: redondancia de equipos(pon más equipos para que se distrib
 
 
 ## NAC
-POner visibilidad, utilizar aplicaciones para que todo el sistema sea visual y claro.
+Poner visibilidad, utilizar aplicaciones para que todo el sistema sea visual y claro.
+
+## MVP(Minimal Vaiable Product)
+Spotify tribu(modalidad de trabajo enfocada a producto)
+Design thinking
+Product Design Steps(el product development comienza más tarde respeto a los otros dos steps)
+MAP(Minimum Awesome Product)
+Imagen MVP v/s MAP(www.spaceo.ca/blog/minimum-awesome-product-map)
+
+## mirar facePHI

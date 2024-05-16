@@ -34,6 +34,14 @@ SOC(Security Operation Center)
 SOAR(Security Orchestration, automation and Resposne)
 ISM(Information Security Management)
 
+
+CQRS(Command-query responsability separation): patron de diseño arquitecturales(design patterns)(para formar un API mirar "bridge"), separa la logica de nuestra aplicaciones para separar las lecturas de las escrituras. Un ejemplo: foto sacada de la pizarra.
+FIFO(First In First Out)
+
+
+MVP(Minimal Vaiable Product)
+MAP
+
 Puesto en un plan de contingencia:
     RTO: tiempo permitido en el plan de servicio perdido
     RPO: cantidad de datos que se pueda perder
