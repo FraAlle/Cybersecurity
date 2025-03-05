@@ -1,0 +1,39 @@
+version: 1.1
+file_type: data-source-administration
+name: Example
+domain: enterprise-attack
+systems:
+  - applicable_to: Windows
+    platform:
+      - Windows
+data_sources:
+  - data_source_name: Command Execution
+    data_source:
+      - applicable_to:
+          - Windows
+        date_registered: null
+        date_connected: null
+        products: []
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
+  - data_source_name: Process Creation
+    data_source:
+      - applicable_to:
+          - Windows
+        date_registered: null
+        date_connected: null
+        products: []
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 1
+          data_field_completeness: 1
+          timeliness: 1
+          consistency: 1
+          retention: 1
